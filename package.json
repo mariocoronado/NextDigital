@@ -1,0 +1,23 @@
+{
+  "name": "js-vitest-boilerplate",
+  "author": "Kevin Hierro",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "tdd-example-javascript",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "directories": { "src": "src", "test": "test" },
+  "scripts": {
+    "test": "vitest run --reporter=verbose",
+    "test:watch": "vitest --watch",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format": "biome format --write .",
+    "check": "biome check ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.0",
+    "vitest": "4.1.9"
+  }
+}
